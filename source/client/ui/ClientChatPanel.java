@@ -1,0 +1,5 @@
+package client.ui;
+
+import javax.swing.JPanel;
+
+public class ClientChatPanel extends JPanel {}

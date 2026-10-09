@@ -1,0 +1,38 @@
+# =========================================================================
+# Git Ignore configuration for Network Programming Project
+# Academic Year 2026-2027
+# =========================================================================
+
+# Compiled Java Bytecode
+*.class
+bin/
+build/
+out/
+target/
+
+# Local Database Files & Runtime Cache
+data/*.db
+data/*.db-journal
+data/*.db-wal
+data/*.db-shm
+data/uploads/*
+!data/uploads/.gitkeep
+
+# Logs and Execution Artifacts
+*.log
+logs/
+
+# IDE and Editor configurations
+.idea/
+.vscode/
+*.iml
+*.iws
+*.ipr
+.project
+.classpath
+.settings/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+desktop.ini

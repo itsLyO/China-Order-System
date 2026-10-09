@@ -1,0 +1,28 @@
+Giảng viên:
+Hệ thống này hoạt động giữa Client và Server, trong đó Server chính là bản thân mình. Thay vì chăm sóc khách hàng theo cách thông thường, mình coi từng khách hàng là một "Client". Mình có thể theo dõi xem từng người đang có bao nhiêu hàng, đã bán được bao nhiêu. Khi họ gần hết hàng, mình có thể chủ động nhắn tin tư vấn: "Hàng sắp hết rồi, ông có muốn lấy thêm không?".
+
+Chăm sóc khách hàng đi sâu vào từng chi tiết như thế. Khác với phương pháp truyền thống là bạn bán hàng xong rồi thụ động đợi khi nào khách hết hàng mới tự gọi lại. Ở đây, mình quản lý hệ thống trực tiếp chứ không giống như việc bán qua các sàn thương mại điện tử (như Shopee) – nơi mà lượng hàng khách nhập lên không liên quan đến mình.
+
+Sinh viên:
+Em muốn hỏi lại cho rõ, Server là chính mình (tức là mình có hàng), còn Client là một người bán hàng khác đúng không ạ?
+
+Giảng viên:
+Client là người đi bán hàng. Mình không phải là người giao hàng trực tiếp mà là người đi gom hàng và order cho họ. Mình có lợi thế là biết ngoại ngữ, có thể thương lượng (deal) được giá cả, màu sắc, kích cỡ. Trên hệ thống của Server sẽ hiển thị đầy đủ hình ảnh, mô tả sản phẩm và chi phí vận chuyển.
+
+Sinh viên:
+Vậy luồng hoạt động cụ thể là Client sẽ nhận thông tin từ đâu và quy trình đặt hàng thế nào ạ?
+
+Giảng viên:
+Ví dụ, khi Client muốn mua hàng, họ sẽ nhắn tin cho Server (giống như chat Messenger bình thường): "Tôi đang cần lô hàng này, hình ảnh đây, ông xem có thể thương lượng giá tốt hơn cho tôi không?".
+
+Sau khi hai bên trao đổi và chốt xong, ngay trong khung chat sẽ có một tính năng để tạo ticket order. Ticket này được đẩy lên Server. Server sẽ xem, duyệt và phản hồi lại các thông tin: mặt hàng này số lượng ít/nhiều thì giá bao nhiêu, chi phí vận chuyển thế nào, và trạng thái hiện tại. Cả Server và Client đều có thể theo dõi và cập nhật trạng thái đơn hàng này.
+
+Bên phía Client cũng sẽ có các tính năng để xem lại danh sách mặt hàng đã từng order và dễ dàng tạo yêu cầu nhập lại nếu muốn.
+
+Sinh viên:
+Em hiểu luồng rồi, nhưng Client là người mua hàng bình thường hay là người lấy hàng về bán tiếp ạ? Và nếu Client có một kho chứa hàng, thì Server có kho hàng tương tự không?
+
+Giảng viên:
+Client là người lấy hàng về bán lẻ (đại lý tuyến dưới). Còn Server không có kho hàng và không bao giờ nhập hàng sẵn về kho. Server thuần túy chỉ là người đi order.
+
+Quy trình là: Khi Client tạo ticket yêu cầu nhập hàng, Server sẽ gửi thông tin (ví dụ: mã QR) để yêu cầu đặt cọc trước một khoản. Khách thanh toán cọc xong, Server mới bắt đầu đi đặt hàng từ đầu mối bên Trung Quốc. Sau đó, Server sẽ liên tục cập nhật trạng thái đơn hàng (đã order, hàng đang di chuyển đến đâu...) để Client theo dõi cho đến khi hàng được gửi tới nơi.
