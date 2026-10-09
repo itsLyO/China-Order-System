@@ -16,8 +16,8 @@
 
 | No. | Student ID | Full Name | Email | Main Responsibility | Contribution |
 | :---: | :---: | :---: | :---: | :--- | :---: |
-| 1 | ... | Thành viên 1 | ... | **Server Core & Network Protocol Lead**: Custom TCP Framing, ServerSocket & ThreadPool, Server Push, SQLite DB, Server Dashboard UI, Scalability Benchmark | 50% |
-| 2 | ... | Thành viên 2 | ... | **Client Core & Business Workflow Lead**: Client Socket Controller, Packet Listener, Heartbeat & Reconnect, Chunked Image Transfer, Kho hàng đại lý, Tracking Timeline UI, Latency Benchmark | 50% |
+| 1 | ... | Hiếu | ... | **Server Core & Network Protocol Lead**: Custom TCP Framing, ServerSocket & ThreadPool, Server Push, SQLite DB, Server Dashboard UI, Scalability Benchmark | 50% |
+| 2 | ... | Quang | ... | **Client Core & Business Workflow Lead**: Client Socket Controller, Packet Listener, Heartbeat & Reconnect, Chunked Image Transfer, Kho hàng đại lý, Tracking Timeline UI, Latency Benchmark | 50% |
 | | | | | **Total** | **100%** |
 
 ## 1.4. Instructor
