@@ -40,7 +40,10 @@ public class OrderServer {
         // 3. Khoi dong Heartbeat Monitor
         heartbeatMonitor.start();
 
-        // 4. Dang ky Shutdown Hook de tat an toan khi nhan Ctrl+C
+        // 4. Dang ky PacketDispatcher ket noi tang Core voi Service nghiep vu
+        ClientHandler.setGlobalDispatcher(new server.service.ServerPacketDispatcher());
+
+        // 5. Dang ky Shutdown Hook de tat an toan khi nhan Ctrl+C
         Runtime.getRuntime().addShutdownHook(new Thread(this::stop, "ServerShutdownHook"));
 
         // 5. Mo ServerSocket va lang nghe ket noi
